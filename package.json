@@ -11,7 +11,11 @@
   "type": "commonjs",
   "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "bcrypt": "^5.1.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.11.0"
   },
   "devDependencies": {
     "compression": "^1.8.0",
