@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 // init middlewares
 app.use(morgan("dev"));
 app.use(helmet());
-app.use(compression);
+app.use(compression());
 
 // init db
 require("./dbs/init.mongodb");
