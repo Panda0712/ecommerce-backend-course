@@ -1,12 +1,40 @@
 @url_dev=http://localhost:3055/v1/api/
 
 ### signUp
-
 POST {{url_dev}}/shop/signup
 Content-Type: application/json
+x-api-key: d563184e6ba304b63f43800aac844a2b2555cdbf15cbc318fe7b6c4a559949a05448cbc0c150eca6959620e183a92e12e3069a7a05b100522b4d2a942fefa84e
 
 {
     "name": "John Doe",
-    "email": "john.doe07@example.com",
+    "email": "tuan09@example.com",
     "password": "password123"
+}
+
+### login
+POST {{url_dev}}/shop/login
+Content-Type: application/json
+x-api-key: d563184e6ba304b63f43800aac844a2b2555cdbf15cbc318fe7b6c4a559949a05448cbc0c150eca6959620e183a92e12e3069a7a05b100522b4d2a942fefa84e
+
+{
+    "email": "tuan09@example.com",
+    "password": "password123"
+}
+
+### logout
+POST {{url_dev}}/shop/logout
+Content-Type: application/json
+x-api-key: d563184e6ba304b63f43800aac844a2b2555cdbf15cbc318fe7b6c4a559949a05448cbc0c150eca6959620e183a92e12e3069a7a05b100522b4d2a942fefa84e
+x-client-id: 67c7e520e51cfc82ecf038f9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2M3ZTUyMGU1MWNmYzgyZWNmMDM4ZjkiLCJlbWFpbCI6InR1YW4wOUBleGFtcGxlLmNvbSIsImlhdCI6MTc0MTE3MDg0OSwiZXhwIjoxNzQxMzQzNjQ5fQ.kieeIitFnYhE0GFRwAUnXsPFJzv_m0tSYyqF-Vlpydo
+
+### refreshToken
+POST {{url_dev}}/shop/refreshToken
+Content-Type: application/json
+x-api-key: d563184e6ba304b63f43800aac844a2b2555cdbf15cbc318fe7b6c4a559949a05448cbc0c150eca6959620e183a92e12e3069a7a05b100522b4d2a942fefa84e
+x-client-id: 67c7e520e51cfc82ecf038f9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2M3ZTUyMGU1MWNmYzgyZWNmMDM4ZjkiLCJlbWFpbCI6InR1YW4wOUBleGFtcGxlLmNvbSIsImlhdCI6MTc0MTE5MjM1MSwiZXhwIjoxNzQxMzY1MTUxfQ.371VUco0SHvIpPAbvH3ZIBhCe8K1TrQEs08lA-oe1-I
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2M3ZTUyMGU1MWNmYzgyZWNmMDM4ZjkiLCJlbWFpbCI6InR1YW4wOUBleGFtcGxlLmNvbSIsImlhdCI6MTc0MTE5MjM1MSwiZXhwIjoxNzQxNzk3MTUxfQ.esQBQRJGOmzlzPGqdfMzGK-8COwTod92KorwoEnTTd0"
 }
